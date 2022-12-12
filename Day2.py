@@ -24,7 +24,7 @@ points = {
 }
 
 
-def parse_guide(guide: str):
+def parse_guide(guide: str) -> int:
     total = 0
     for section in guide.split("\n"):
         shape, reaction = section.split()
