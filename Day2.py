@@ -1,7 +1,3 @@
-STRATEGY_GUIDE = """A Y
-B X
-C Z"""
-
 points = {
     "A": {
         "X": 3,
@@ -32,4 +28,7 @@ def parse_guide(guide: str) -> int:
     return total
 
 
-print(parse_guide(STRATEGY_GUIDE))
+if __name__ == "__main__":
+    with open("Day2_input.txt") as f:
+        guide = f.read().strip()
+    print(parse_guide(guide))

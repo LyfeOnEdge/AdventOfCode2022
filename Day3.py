@@ -32,4 +32,7 @@ def calculate_priorities(contents: str) -> int:
     return total
 
 
-print(calculate_priorities(CONTENTS))
+if __name__ == "__main__":
+    with open("Day3_input.txt") as f:
+        contents = f.read()
+        print(calculate_priorities(contents))
